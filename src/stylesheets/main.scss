@@ -1,3 +1,126 @@
 /* Your styles go here */
+
+$primary: #f3e39f;
+$secondary: #db2181;
+$light: #e5e6e5;
+$warning: #5e9496;
+$dark: black;
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "NavBar.scss";
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.we_buy {
+  font-size: 3.5rem;
+}
+
+.hero_form {
+  background-color: rgb(7, 143, 141, 0.6);
+  margin-top: 10rem;
+}
+
+.advantage {
+  background-color: #078f8d;
+  height: 650px;
+}
+
+.testimonials {
+  text-align: center;
+  width: 1000px;
+  height: 120%;
+}
+
+.selling_point {
+  text-align: center;
+  margin-left: auto;
+  width: 350px;
+  margin-top: 30rem;
+}
+
+.row_1 {
+  img {
+    padding-bottom: -5rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    .hero_form {
+      display: flex;
+      justify-content: start;
+    }
+  }
+
+  .how_it_works {
+    .cards {
+      flex-direction: column;
+      align-items: start;
+      font-size: 1.5rem;
+      .card {
+        margin-top: 3rem;
+        width: 100% !important;
+        height: 12rem;
+      }
+      .card:nth-child(2) {
+        margin-top: 6.5rem;
+      }
+    }
+    .cards_2 {
+      flex-direction: column;
+      font-size: 1.5rem;
+      margin-top: 2rem !important;
+      .card {
+        margin-top: 3rem;
+        width: 100% !important;
+        height: 12rem;
+      }
+    }
+  }
+  .advantage {
+    height: auto;
+    .advantage_1 {
+      flex-direction: column;
+      align-items: center;
+      .second_group {
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  .testimonials {
+    width: auto;
+  }
+
+  .purchases {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0 !important;
+    //justify-content: center;
+
+    .card {
+      margin-right: 1rem !important;
+      margin-top: 2rem;
+    }
+  }
+
+  .footer {
+    img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+    .copyright {
+      margin-bottom: 10rem;
+    }
+  }
+}
